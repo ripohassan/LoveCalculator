@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:id="@+id/et_fname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter First Name"/>
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:layout_below="@+id/et_fname"
+        android:id="@+id/et_sname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Secoand Name"/>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp"
+        android:background="@drawable/btn_shape"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:text="Calculate"
+        android:textColor="#005e5e"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imv_love"
+        android:src="@drawable/love"
+        android:layout_below="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="181dp"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
